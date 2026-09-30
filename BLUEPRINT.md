@@ -1,6 +1,6 @@
-# Workspace-Blueprint 1.2
+# Workspace-Blueprint 1.3
 
-> **Version:** 1.2 vom 2026-09-30 · **Von:** Finn Ole Behrends, [linkedin.com/in/finn-behrends](https://www.linkedin.com/in/finn-behrends) · **Lizenz:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de) · **Offizielle Fassung:** [github.com/420flow/workspace-blueprint](https://github.com/420flow/workspace-blueprint)
+> **Version:** 1.3 vom 2026-09-30 · **Von:** Finn Ole Behrends, [linkedin.com/in/finn-behrends](https://www.linkedin.com/in/finn-behrends) · **Lizenz:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de) · **Offizielle Fassung:** [github.com/420flow/workspace-blueprint](https://github.com/420flow/workspace-blueprint)
 >
 > © 2026 Finn Ole Behrends. Weitergeben ist ausdrücklich erwünscht. Du darfst die Datei nutzen, anpassen und weitergeben, auch in deiner Firma. Bedingung: Der Name des Urhebers, der Link zur Lizenz und der Hinweis „ohne Gewähr“ bleiben erhalten, und eine geänderte Fassung ist als geändert gekennzeichnet.
 
@@ -189,7 +189,7 @@ except OSError:
 Eine Zeile je Datei: SHA-256 und Pfad. Der Extraktor prüft dagegen.
 
 <<<MANIFEST>>>
-version: 1.2
+version: 1.3
 5786dbfd1671ba27ad759b989af4a81f5f13b61158de227aead9e926e962140c  .gitignore
 4bb398747e8bdced761126498c98740d93e978ba2aec4a3d53424f1e774094a4  AGENTS.md
 875983f11048076406fef6490fc327a7a906ff26ecb65cb6d42246fba937ef1f  AUFGABEN.md
@@ -1039,7 +1039,7 @@ Stelle jede Frage einzeln. Standardantwort ist markiert. „Standard“ als Antw
 
 **Frage 1: Wie heißt du mit Vornamen?** Freitext. Daraus wird `{{VORNAME}}`. `{{ORDNER}}` ist der Name des aktuellen Ordners, so wie er heißt; nicht umbenennen.
 
-**Frage 2: Welche beruflichen Bereiche willst du hier führen?** Mehrfachauswahl, Standard: 1 und 2. Jeder Bereich bekommt einen eigenen Ordner unter `beruflich/`.
+**Frage 2: Welche beruflichen Bereiche willst du hier führen?** Mehrfachauswahl, Standard: 1. Jeder Bereich bekommt einen eigenen Ordner unter `beruflich/`.
 1. Hauptjob (angestellt)
 2. Nebenjob (angestellt, Minijob, Werkstudent)
 3. Selbstständig oder eigene Firma, auch nebenberuflich
