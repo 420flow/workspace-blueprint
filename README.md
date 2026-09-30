@@ -1,6 +1,8 @@
-# KI-Workspace-Blueprint
+# KI-Workspace-Blueprint: dein Second Brain für KI-Agenten
 
-Ein kompletter Workspace für die Arbeit mit KI-Agenten in einer einzigen Datei. Ein Agent mit Dateizugriff (Claude Code, Codex, Antigravity) packt sie aus, stellt dir ein paar Fragen und richtet Ordner, Regeln, Skills und Vorlagen für Beruf, Privates und ein eigenes Wissens-Wiki ein. Danach weiß dein Agent in jeder neuen Sitzung, wo was liegt, und macht dort weiter, wo du aufgehört hast.
+*An AI second brain workspace for Claude Code, Codex and Antigravity, set up from a single file. In German.*
+
+Ein Second Brain, mit dem dein KI-Agent arbeitet: ein kompletter Workspace in einer einzigen Datei. Ein Agent mit Dateizugriff (Claude Code, Codex, Antigravity) packt sie aus, stellt dir ein paar Fragen und richtet Ordner, Regeln, Skills und Vorlagen für Beruf, Privates und ein eigenes Wissens-Wiki ein. Danach weiß dein Agent in jeder neuen Sitzung, wo was liegt, und macht dort weiter, wo du aufgehört hast. Notizen, Projekte, Dokumente und Wissen liegen als einfache Markdown-Dateien bei dir, nicht in einer App.
 
 Von **Finn Ole Behrends** · [LinkedIn](https://www.linkedin.com/in/finn-behrends) · Lizenz [CC BY 4.0](LICENSE) · aktuelle Version **1.4** vom 2026-09-30 · auf Deutsch
 
