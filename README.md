@@ -2,7 +2,7 @@
 
 Ein kompletter Workspace für die Arbeit mit KI-Agenten in einer einzigen Datei: Ordnerstruktur, Regeln, vier Skills (Hub-Update, Feierabend, Posteingang verarbeiten, Steckbrief) und Vorlagen. Drei Bereiche: **Beruflich** mit je einem Ordner für Hauptjob, Nebenjob, eigene Firma und berufliche Vorhaben, **Persönlich** mit Lebensbereichen wie Finanzen, Gesundheit, Wohnen und Verwaltung, dazu ein **Wissens-Wiki**. Ein Agent mit Dateizugriff (Claude Code, Codex, Antigravity) packt die Datei aus, stellt dir ein paar Fragen und richtet alles ein.
 
-Von **Finn Ole Behrends** · [LinkedIn](https://www.linkedin.com/in/finn-behrends) · Lizenz [CC BY 4.0](LICENSE) · aktuelle Version **1.1** vom 2026-09-30
+Von **Finn Ole Behrends** · [LinkedIn](https://www.linkedin.com/in/finn-behrends) · Lizenz [CC BY 4.0](LICENSE) · aktuelle Version **1.2** vom 2026-09-30
 
 ## So richtest du ihn ein
 
@@ -10,9 +10,9 @@ Von **Finn Ole Behrends** · [LinkedIn](https://www.linkedin.com/in/finn-behrend
 2. Öffne den Ordner in Claude Code, Codex oder Antigravity.
 3. Gib diesen Prompt ein:
 
-> Lade mit `curl -fsSLO https://raw.githubusercontent.com/420flow/workspace-blueprint/main/BLUEPRINT.md` die Datei BLUEPRINT.md in diesen leeren Ordner. Lies sie danach vollständig und richte meinen Workspace genau so ein, wie es dort im Abschnitt „Anweisung an den Agenten“ steht.
+> Prüfe zuerst, ob dieser Ordner leer ist; erlaubt sind nur versteckte Einträge wie .claude, .codex, .gemini oder .DS_Store. Ist er nicht leer, lade nichts herunter, sondern sag mir, dass ich einen neuen leeren Ordner anlegen und dort neu starten soll. Ist er leer, lade mit `curl -fsSLO https://raw.githubusercontent.com/420flow/workspace-blueprint/main/BLUEPRINT.md` die Datei BLUEPRINT.md herunter, lies sie vollständig und richte meinen Workspace genau so ein, wie es dort im Abschnitt „Anweisung an den Agenten“ steht.
 
-Der Agent fragt, ob er den Download ausführen darf: erlauben. Danach stellt er dir ein paar Fragen, Dauer rund 15 Minuten. Lies vorher den Abschnitt [„Bevor du loslegst“](BLUEPRINT.md#bevor-du-loslegst): Datenschutz, eigene Firma, Haftung.
+Der Agent prüft zuerst, ob der Ordner wirklich leer ist, und fragt dann, ob er den Download ausführen darf: erlauben. Danach stellt er dir ein paar Fragen, Dauer rund 15 Minuten. Lies vorher den Abschnitt [„Bevor du loslegst“](BLUEPRINT.md#bevor-du-loslegst): Datenschutz, eigene Firma, Haftung.
 
 Voraussetzung: ein Mac mit `python3`. Fragt macOS nach den Befehlszeilen-Entwicklerwerkzeugen, installieren und den Prompt erneut eingeben. Auf Windows den Ordner in Git Bash oder WSL öffnen.
 
@@ -36,6 +36,7 @@ Gern. Am besten den Prompt von oben oder den Link auf dieses Repo, dann bekommt 
 
 | Version | Datum | Änderung |
 |---|---|---|
+| 1.2 | 2026-09-30 | Agent prüft vor allem anderen, ob der Ordner leer ist und ob er in einem Cloud-Speicher liegt; neutrale Beispiele statt realer Anbieter |
 | 1.1 | 2026-09-30 | Link auf dieses Repo als offizielle Fassung im Kopf und im eingerichteten Workspace, Echtheitsprüfung über `SHA256SUMS` |
 | 1.0 | 2026-09-30 | Erste öffentliche Fassung |
 
