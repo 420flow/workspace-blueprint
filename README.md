@@ -10,7 +10,7 @@ Von **Finn Ole Behrends** · [LinkedIn](https://www.linkedin.com/in/finn-behrend
 2. Öffne den Ordner in Claude Code, Codex oder Antigravity.
 3. Gib diesen Prompt ein:
 
-> Prüfe zuerst, ob dieser Ordner leer ist; erlaubt sind nur versteckte Einträge wie .claude, .codex, .gemini oder .DS_Store. Ist er nicht leer, lade nichts herunter, sondern sag mir, dass ich einen neuen leeren Ordner anlegen und dort neu starten soll. Ist er leer, lade mit `curl -fsSLO https://raw.githubusercontent.com/420flow/workspace-blueprint/main/BLUEPRINT.md` die Datei BLUEPRINT.md herunter, lies sie vollständig und richte meinen Workspace genau so ein, wie es dort im Abschnitt „Anweisung an den Agenten“ steht.
+> Prüfe zuerst mit `ls -A`, ob dieser Ordner leer ist. Einträge mit einem Punkt am Anfang zählen nicht, und öffne keine vorhandenen Dateien. Ist er nicht leer, lade nichts herunter und ändere nichts, sondern erklär mir, wie ich einen neuen leeren Ordner anlege und dort neu starte. Ist er leer, lade mit `curl -fsSLO https://raw.githubusercontent.com/420flow/workspace-blueprint/main/BLUEPRINT.md` die Datei BLUEPRINT.md herunter, lies sie vollständig und richte meinen Workspace genau so ein, wie es dort im Abschnitt „Anweisung an den Agenten“ steht.
 
 Der Agent prüft zuerst, ob der Ordner wirklich leer ist, und fragt dann, ob er den Download ausführen darf: erlauben. Danach stellt er dir ein paar Fragen, Dauer rund 15 Minuten. Lies vorher den Abschnitt [„Bevor du loslegst“](BLUEPRINT.md#bevor-du-loslegst): Datenschutz, eigene Firma, Haftung.
 
