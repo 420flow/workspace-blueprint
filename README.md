@@ -6,13 +6,17 @@ Von **Finn Ole Behrends** · [LinkedIn](https://www.linkedin.com/in/finn-behrend
 
 ## So richtest du ihn ein
 
-1. [`BLUEPRINT.md` herunterladen](https://github.com/420flow/workspace-blueprint/raw/main/BLUEPRINT.md). Der Dateiname muss `BLUEPRINT.md` bleiben.
-2. Einen leeren Ordner anlegen, zum Beispiel `~/Desktop/<dein-vorname>`, und die Datei hineinlegen. Nicht in einen Cloud-Ordner deines Arbeitgebers.
-3. Den Ordner in Claude Code, Codex oder Antigravity öffnen und diesen Prompt eingeben:
+1. Leg einen leeren Ordner an, zum Beispiel `~/Desktop/<dein-vorname>`. Nicht in einen Cloud-Ordner deines Arbeitgebers, der Workspace gehört dir.
+2. Öffne den Ordner in Claude Code, Codex oder Antigravity.
+3. Gib diesen Prompt ein:
 
-> Lies BLUEPRINT.md vollständig und richte meinen Workspace genau so ein, wie es dort im Abschnitt „Anweisung an den Agenten“ steht. Schreibe die Dateien nicht selbst, sondern nutze den Extraktor aus der Datei. Stell mir danach die Fragen aus dem Abschnitt „Einrichtung“ einzeln mit nummerierten Antwortmöglichkeiten und fülle die Platzhalter. Zum Schluss zeig mir ERSTE-SCHRITTE.md.
+> Lade mit `curl -fsSLO https://raw.githubusercontent.com/420flow/workspace-blueprint/main/BLUEPRINT.md` die Datei BLUEPRINT.md in diesen leeren Ordner. Lies sie danach vollständig und richte meinen Workspace genau so ein, wie es dort im Abschnitt „Anweisung an den Agenten“ steht.
 
-Vorher den Abschnitt „Bevor du loslegst“ oben in der Datei lesen: Datenschutz, eigene Firma, Haftung. Dauer rund 15 Minuten.
+Der Agent fragt, ob er den Download ausführen darf: erlauben. Danach stellt er dir ein paar Fragen, Dauer rund 15 Minuten. Lies vorher den Abschnitt [„Bevor du loslegst“](BLUEPRINT.md#bevor-du-loslegst): Datenschutz, eigene Firma, Haftung.
+
+Voraussetzung: ein Mac mit `python3`. Fragt macOS nach den Befehlszeilen-Entwicklerwerkzeugen, installieren und den Prompt erneut eingeben. Auf Windows den Ordner in Git Bash oder WSL öffnen.
+
+**Falls der Agent nichts herunterladen darf** (Codex blockiert das oft): [`BLUEPRINT.md` herunterladen](https://github.com/420flow/workspace-blueprint/raw/main/BLUEPRINT.md), in den leeren Ordner legen (der Name muss `BLUEPRINT.md` bleiben) und den Prompt aus dem Kopf der Datei eingeben.
 
 ## Echtheit prüfen
 
@@ -26,7 +30,7 @@ Stimmt die Zahl nicht überein, ist die Datei verändert. Dann nicht verwenden, 
 
 ## Weitergeben
 
-Gern. Am besten den Link auf dieses Repo, dann bekommt jeder die aktuelle Fassung. Wer die Datei selbst weitergibt oder anpasst, lässt Namen, Lizenzlink und den Hinweis „ohne Gewähr“ drin und kennzeichnet Änderungen.
+Gern. Am besten den Prompt von oben oder den Link auf dieses Repo, dann bekommt jeder die aktuelle Fassung direkt von hier. Wer die Datei selbst weitergibt oder anpasst, lässt Namen, Lizenzlink und den Hinweis „ohne Gewähr“ drin und kennzeichnet Änderungen.
 
 ## Versionen
 
