@@ -1,6 +1,6 @@
-# Workspace-Blueprint 1.0
+# Workspace-Blueprint 1.1
 
-> **Version:** 1.0 vom 2026-09-30 · **Von:** Finn Ole Behrends, [linkedin.com/in/finn-behrends](https://www.linkedin.com/in/finn-behrends) · **Lizenz:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de)
+> **Version:** 1.1 vom 2026-09-30 · **Von:** Finn Ole Behrends, [linkedin.com/in/finn-behrends](https://www.linkedin.com/in/finn-behrends) · **Lizenz:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de) · **Offizielle Fassung:** [github.com/420flow/workspace-blueprint](https://github.com/420flow/workspace-blueprint)
 >
 > © 2026 Finn Ole Behrends. Weitergeben ist ausdrücklich erwünscht. Du darfst die Datei nutzen, anpassen und weitergeben, auch in deiner Firma. Bedingung: Der Name des Urhebers, der Link zur Lizenz und der Hinweis „ohne Gewähr“ bleiben erhalten, und eine geänderte Fassung ist als geändert gekennzeichnet.
 
@@ -15,7 +15,7 @@ Ein Agent mit Dateizugriff (Codex, Claude Code, Antigravity) packt sie aus, frag
 - **Was der Agent liest, geht an den Anbieter deines KI-Werkzeugs.** Schalte in dessen Einstellungen ab, dass deine Inhalte zum Training genutzt werden, bevor du Befunde, Gehaltsabrechnungen oder Verträge ablegst. Unterlagen deines Arbeitgebers nur, soweit er es erlaubt; die Einrichtung fragt dafür je Job nach einer Regel.
 - **Eigene Firma?** Daten von Kunden, Mitarbeitenden und Bewerbern sind personenbezogene Daten nach der DSGVO. Sie gehören nur in den Workspace, wenn du mit deinem KI-Anbieter einen Vertrag zur Auftragsverarbeitung (AVV) hast. Den gibt es meist nur in Business- oder Team-Tarifen. Ohne AVV bleiben sie draußen, deine eigenen Notizen und Aufgaben zur Firma sind unproblematisch.
 - **Ohne Gewähr, ohne Support.** Der Agent legt Dateien in deinem Ordner an und verschiebt sie. Die Nutzung erfolgt auf eigenes Risiko, ein Backup (zum Beispiel Time Machine) ist sinnvoll. Rückmeldungen und Verbesserungsideen gern über LinkedIn.
-- **Weitergeleitete Datei?** Der Blueprint enthält ein kleines Python-Programm, den Extraktor. Nutze die Datei nur, wenn du sie aus einer Hand bekommen hast, der du vertraust. Dein Agent prüft den Extraktor und die mitgelieferten Anweisungen vor dem Ausführen (Schritt 1 unten). Die Prüfsummen in der Datei erkennen Übertragungsfehler, aber keine absichtlichen Änderungen. Die aktuelle Fassung bekommst du auf Anfrage über LinkedIn.
+- **Weitergeleitete Datei?** Der Blueprint enthält ein kleines Python-Programm, den Extraktor. Nutze die Datei nur, wenn du sie aus einer Hand bekommen hast, der du vertraust. Dein Agent prüft den Extraktor und die mitgelieferten Anweisungen vor dem Ausführen (Schritt 1 unten). Die Prüfsummen in der Datei erkennen Übertragungsfehler, aber keine absichtlichen Änderungen. Echt ist die Datei, wenn `shasum -a 256 BLUEPRINT.md` dieselbe Zahl ergibt wie `SHA256SUMS` in der offiziellen Fassung auf GitHub. Sonst lade sie dort neu herunter, dort liegt auch immer die aktuelle Version.
 
 ## So richtest du deinen Workspace ein
 
@@ -187,17 +187,17 @@ except OSError:
 Eine Zeile je Datei: SHA-256 und Pfad. Der Extraktor prüft dagegen.
 
 <<<MANIFEST>>>
-version: 1.0
+version: 1.1
 5786dbfd1671ba27ad759b989af4a81f5f13b61158de227aead9e926e962140c  .gitignore
 4bb398747e8bdced761126498c98740d93e978ba2aec4a3d53424f1e774094a4  AGENTS.md
 875983f11048076406fef6490fc327a7a906ff26ecb65cb6d42246fba937ef1f  AUFGABEN.md
 1b60c079514ac71180cdc29143de15f31b29806bd5e64297ec63f5bdbaf4a44e  CLAUDE.md
 67330688f429610120a81acb8412f6881382f5646263c2ead16120d945c2f38f  CONTEXT.md
-f471dbbe6e9ae2d7f6a6c6bee27465b8fe3078c1e0039ad8d0d612749be95161  ERSTE-SCHRITTE.md
+cfcbff06718be47e7bb8c8bd54f06ba03a0691dc4fa2408d93a5bf3abb8396f4  ERSTE-SCHRITTE.md
 92b75c761073302f692b00d917e33df9e30d5bfdb9b241f23decc02acbcb2ec6  GEMINI.md
 62e5acf950668bcd8d7dc9d8472875658cd76247e3ac9ce32e7ac18d656845d2  GOTCHAS.md
 ea239cc8ed06ace4db9e7c9a9afb8b71e6e27dea4be73ad5925b32f13efd14fa  PROFIL.md
-8bd141e47581c8bf8b20b0419afa12a7ea49aca26cc962df183272c5d8d98516  README.md
+eec3de4b5d9097b12fb7e7b0280cff467ff2faf987026067b9560b939880de74  README.md
 363459187af47bbe9b3e59944e9ac9e8dca1b5333ff1867de94769ea4374c87e  .agents/skills/feierabend/SKILL.md
 62fb65c5efc8ee24c793bd13b40eb1b081db2463088cbea29e0c55473af4574f  .agents/skills/hub-update/SKILL.md
 3e147227481f65bbc64d570623f21ef683062279a59323d83e3913074b44f323  .agents/skills/posteingang-verarbeiten/SKILL.md
@@ -343,7 +343,7 @@ So rufst du Skills auf: in Claude Code mit `/hub-update`, in Codex mit `$hub-upd
 
 Wenn etwas nicht klappt: Sag dem Agenten, er soll `GOTCHAS.md` lesen und dort eintragen, was schiefging. Fragen zum System beantwortet dein Agent, die Anleitung liegt in `posteingang/archiv/BLUEPRINT.md`.
 
-Der Workspace stammt aus dem Workspace-Blueprint von Finn Ole Behrends, Lizenz [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de). Rückmeldungen gern über [LinkedIn](https://www.linkedin.com/in/finn-behrends), Support gibt es nicht.
+Der Workspace stammt aus dem Workspace-Blueprint von Finn Ole Behrends ([github.com/420flow/workspace-blueprint](https://github.com/420flow/workspace-blueprint), dort liegen auch neue Versionen), Lizenz [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de). Rückmeldungen gern über [LinkedIn](https://www.linkedin.com/in/finn-behrends), Support gibt es nicht.
 <<<ENDE>>>
 
 <<<DATEI GEMINI.md>>>
@@ -414,7 +414,7 @@ Lies zuerst AGENTS.md in diesem Ordner. Dort stehen Regeln, Map und Zuordnung. S
 
 ## Historie
 
-- {{DATUM}}: Workspace mit Blueprint {{VERSION}} von Finn Ole Behrends eingerichtet (Lizenz [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de), [LinkedIn](https://www.linkedin.com/in/finn-behrends)).
+- {{DATUM}}: Workspace mit Blueprint {{VERSION}} von Finn Ole Behrends eingerichtet (Quelle [github.com/420flow/workspace-blueprint](https://github.com/420flow/workspace-blueprint), Lizenz [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de), [LinkedIn](https://www.linkedin.com/in/finn-behrends)).
 <<<ENDE>>>
 
 <<<DATEI .agents/skills/feierabend/SKILL.md>>>
