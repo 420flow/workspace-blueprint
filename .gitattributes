@@ -1,0 +1,3 @@
+# Diese Dateien byte-genau ausliefern, damit die Prüfsumme in SHA256SUMS auf jedem System stimmt
+BLUEPRINT.md -text
+SHA256SUMS -text
